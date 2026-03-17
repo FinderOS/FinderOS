@@ -1,0 +1,17 @@
+{
+  "name": "@finderos/contracts",
+  "version": "0.1.0",
+  "description": "FinderOS smart contracts — $FINDER ERC-20 on Base",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts --network base",
+    "verify": "hardhat verify --network base",
+    "coverage": "hardhat coverage"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+COPY packages/agent/package.json packages/agent/
+RUN npm ci --workspace=packages/agent
+
+COPY packages/agent packages/agent
+
+CMD ["node", "packages/agent/src/index.js"]

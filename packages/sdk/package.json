@@ -1,0 +1,17 @@
+{
+  "name": "@finderos/sdk",
+  "version": "0.1.0",
+  "description": "FinderOS SDK — interact with the FinderOS agent and contracts",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "viem": "^2.0.0"
+  },
+  "peerDependencies": {
+    "viem": ">=2.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "finderos",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FinderOS — AI agent on Base. 2,000,000,000 Apple users onchain.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "deploy": "bash infra/scripts/deploy.sh",
+    "agent:start": "node packages/agent/src/index.js",
+    "scanner:start": "node packages/scanner/src/index.js"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0",
+    "prettier": "^3.2.0",
+    "eslint": "^9.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

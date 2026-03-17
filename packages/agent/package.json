@@ -1,0 +1,26 @@
+{
+  "name": "@finderos/agent",
+  "version": "0.1.0",
+  "description": "FinderOS AI agent — Base chain autonomous agent",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "tsc",
+    "test": "jest --coverage",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0",
+    "viem": "^2.0.0",
+    "dotenv": "^16.0.0",
+    "winston": "^3.11.0",
+    "cron": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "nodemon": "^3.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
+  }
+}

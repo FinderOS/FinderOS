@@ -1,0 +1,17 @@
+{
+  "name": "@finderos/scanner",
+  "version": "0.1.0",
+  "description": "Onchain scanner — detects Apple device wallets on Base",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "viem": "^2.0.0",
+    "dotenv": "^16.0.0",
+    "winston": "^3.11.0"
+  }
+}
